@@ -1,0 +1,611 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+%\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+%\usepackage{natbib}
+\usepackage{bibentry}
+%\usepackage[style=apa]{biblatex}
+%\bibliography{bibliography.bib}
+\addbibresource{bibliography.bib}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.8,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.9,
+}
+
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Robert John}{ Holash PhD}
+      {Muscle Physiology, Computational Biology}
+   
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+
+\section{Address}
+  Faculty of Kinesiology, University of Calgary: Office KNB 436 %,\\ 2500 University Dr. N.W., Calgary, AB. Canada T2N 1N4
+    ~
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2009-2017}
+    {Doctorate in Muscle Physiology}
+    {University of Calgary, Canada}
+    {Discipline: Skeletal Muscle Physiology.\\
+    Main subjects: Muscle Physiology, Computational Biology, Data Analysis, Structural Modeling, Stochastic Agent based Modelling.\\
+    {Thesis:  "Three dimensional stochastic computer model of the skeletal muscle half sarcomere: changes in calcium diffusion caused by the myofilament lattice."}\\
+    {Committee:} Drs., Brian MacIntosh, Henk ter Keurs, Christian Jacob,  Chris Barclay.}
+  \entry
+    {1997 - 2000}
+    {Master of Science}
+    {University of Calgary, Canada}
+    {Discipline: Exercise Physiology.\\
+    Main subjects: Cycling Power, Muscle Power.\\
+     {Thesis:  "Validation of single maximal effort tests for power measurement."}\\
+     {Committee:Drs., Brian MacIntosh, Stephen Norris, Douglas Syme.}}
+  
+  \entry
+    {1990 - 1993}
+    {Bachelor's Degree in Physical Education}
+    {University of Calgary, Canada}
+    {Main subjects: Outdoor Pursuits, Leadership in Extreme Environments.\\
+    {Senior Project: "Calgary River Cleanup, Conservation of Calgary Rivers and Pathways".}}
+ 
+\end{entrylist}
+\section{Courses Taught}
+
+\begin{entrylist}
+%%%%%%%%%%%%%%
+\hrule
+\entry
+    {2019-Current}
+    {KNES 213 \textendash Introduction to Research in Kinesiology}
+    {\textbf{Fall 2022 Class Size 150}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Winter 2022 Class Size 150}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Fall 2021 Class Size 144}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Winter 2021 Class Size 148}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Fall 2020 Class Size 133}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Winter 2020 Class Size 120}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Fall 2019 Class Size 120}}
+    {}\hrule
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\entry
+    {2020-2021}
+    {KNES 355 \textendash Human Growth and Development}
+    {\textbf{Winter 2021 \textendash Class Size 262}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Winter 2020 \textendash Class Size 250}}
+    {}
+\hrule
+%%%%%%%%%%%%%%%%
+\entry
+    {2020-Current}
+    {KNES 375 \textendash Tests and Measurements in Kinesiology}
+    {\textbf{Fall 2022 \textendash Class Size 78}}  
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Winter 2022 \textendash Class Size 77}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Winter 2021 \textendash Class Size 80}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Winter 2020 \textendash Class Size 77}}
+    {}
+\hrule
+%%%%%%%%%%%
+\entry
+    {2012-Current}
+    {KNES 381 \textendash Computer Applications in Kinesiology}
+    {\textbf{Winter 2023 \textendash Class Size 24}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Winter 2012 \textendash Class Size 24}}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Fall 2010 \textendash Class Size 24}}
+    {}
+\hrule
+%%%%%%%%%%%%%%%
+\entry
+    {2022}
+    {KNES 475 \textendash Physiological bases of Athletic Performance}
+    {\textbf{Winter 2022 \textendash Class Size 40}}
+    {}
+\hrule
+
+%%%%%%%%%%%%%%%%
+\entry    
+    {2020-Current}
+    {KNES 606 \textendash Practical Skills for Applied Exercise Physiology}
+    {\textbf{Fall\textendash Winter 2022-23 \textendash Class Size 14}}
+    {}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Fall\textendash Winter 2021-22 \textendash Class Size 15}}
+    {}
+    {}
+\entry
+    {~}
+    {~}
+    {\textbf{Fall\textendash Winter 2020-21 \textendash Class Size 9}}
+    {}
+\hrule
+%%%%%%%%%%%%%%%%%%
+\entry
+    {2021}
+    {KNES 604 \textendash Self Directed Study}
+    {\textbf{Fall\textendash Winter 2020-21 \textendash Class Size 1}}
+    {}
+    \hrule
+\end{entrylist}
+%%%%%%%%%%%%%%%%%%%
+\section {Committee Work}
+\entry{2019-Current}
+{Learning Technologies Advisory Committee}
+{Taylor Institute for Teaching and Learning}
+{Faculty of Kinesiology}
+
+\entry{2021-Current}
+{Ethics Committee for Human Studies}
+{University of Calgary}
+{Faculty of Kinesiology representative}
+
+\entry{2021-2022}
+{National Survey of Student Engagement}
+{University of Calgary}
+{Faculty of Kinesiology}
+
+\entry{2019-2021}
+{New Student Orientation}
+{University of Calgary}
+{Faculty of Kinesiology}
+
+\entry{2019-2021}
+{Student Orientation - Faculty Advisor Panel}
+{University of Calgary}
+{Faculty of Kinesiology}
+
+\entry{2021}
+{Search Committee: Human Growth and Development position}
+{University of Calgary}
+{Faculty of Kinesiology}
+
+\entry{2020}
+    {Student Orientation Online Technologies Special Committee}
+    {University of Calgary}
+    {Central Orientation Committee}
+\entry{2019}
+{YUJA Video Evaluation Group}
+{Taylor Institute for Teaching and Learning }
+{Faculty of Kinesiology}
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Summer \& Honours Students}
+\entry{2022}{Kinesiology Undergraduate Research Funding \textendash Thomas Manktelow}{Objective Analysis of Double-Pole Timing in X-Country Skiing.}{}
+\entry{2022}
+{PURE Summer Student Ship \textendash Gavin Thomas}
+{}
+{Active force in skeletal muscle fibres from children with cerebral palsy}
+\entry
+{2021-2022}
+{KNES 490 Honours Project \textendash Allysan Lui }{}{Assessment of Aerobic power in Collegiate Contemporary Dance Using a High-Intensity Dance Performance Fitness Test (DAFT2)}{}
+\entry
+{2021-2022}
+{KNES 490 Honours Project \textendash Chantal Vogel }{}{Effect of Zwift’s Virtual Setting on Individual Outcomes and Performance in Comparison to Traditional Stationary Cycling}{}
+\entry
+{2021-2022}
+{KNES 490 Honours Project \textendash Andreas Cordido }{}{Exercise Thresholds: Functional Threshold Power on an Exergaming Platform versus Power Output at the Respiratory Compensation Point}{}
+\entry
+{2021}
+{Biomedical Engineering Summer Studentship \textendash Maleeka Malik}
+{}
+{\textit{Investigating the changes in titin isoforms and concentration and sarcomere organization in skeletal muscles of obese rats}}
+{}
+\entry
+{2020-2021}
+{KNES 490 Honours Project \textendash Ashley Lornez}
+{}
+{\textit{Investigating Physical Activity Intensity of Virtual Reality Exergame in Recreationally Active Young Adults}}{}
+\section{Graduate Student Trainees}
+\entry{2021-2022}{Jesse Oswald}{ MKin Capstone project}{Mentoring undergraduate students in Honours Research projects}{}
+\entry{2021-2022}{Keenan McDougal}{CURE Program}{CURE Coach Course research project design in Kinesiology 375}{}
+\entry{2021-2022}{Krystyna Sandowsky}{CURE Program}{CURE Coach Course research project design in Kinesiology 375}
+\entry{2021-2022}{Krystyna Sandowski}{MKin Capstone Project}{Alternative Laboratory Teaching Methods in Undergraduate Kinesiology\\
+A Case Study: KNES 375}
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Supervisory Committees}
+\entry{2022-Present}{PhD. Gabriele Marinari}{Faculty of Kinesiology}{\textit{New approaches to characterize the V̇O2 slow component and its physiological mechanisms}}
+
+\entry{2022-Present}{MSc. Marissa Doroshuk}{Faculty of Kinesiology}{\textit {Novel Ovulation Research-Recruitment Methods for an App Study}}
+
+\entry{2022-Present}{MSc. Alissa Kazakoff}{Faculty of Kinesiology} {\textit{Novel Ovulation Research-Recruitment Methods for an App }}
+
+\entry{2021-2022}{Msc. Mary Mackie}{Faculty of Kinesiology}{\textit{The “Step-Ramp-Step” Protocol: Evaluating the Effects of a Smaller First Step Amplitude and Different Ramp Slopes to Determine the V̇O2 Mean Response Time and the Expression of the V̇O2 Slow Component During Ramp-Incremental Tests}}
+ 
+\entry{2020-Present}{PhD.  Keanen McDougal}{Faculty of Kinesiology} {\textit{Alterations in fatigue, efficiency, and pedaling mechanics during incremental and constant-load high-intensity cycling}}
+ 
+% 
+ 
+\entry{2019-Present}{MSc. Jim Griffiths}{Faculty of Kinesiology}{\textit{Heart Rate Variability Novel Methods of Detection}}
+
+\section{Thesis Examiner}
+\entry{2021}{PhD. Candidacy \textendash Nada Abughazaleh}{Biomedical Engineering}{}
+\entry{2022}{PhD. Candidacy \textendash Cody van Rassel}{Faculty of Kinesiology}{}
+\entry{2020}{PhD. Candidacy \textendash Calaine Engals}{Faculty of Kinesiology}{}
+%\entry{2020}{PhD. Candidacy \textendash Calaine Engals}{}{}
+
+
+\section{Thesis Neutral Chair}
+\entry{2020}{Anmol Mattu}{Faculty of Kinesiology}{Menstrual and Oral Contraceptive Phases Do Not Influence Submaximal and Maximal Responses to Exercise or Vascular Responsiveness at Rest}
+\entry{2021}{Anna Thacker}{Faculty of Kinesiology}{Peer to Peer Learning – Using Structured Video as a Tool to Improve Performance with Middle School Children}
+\entry{2021}{Austin Beever}{Faculty of Kinesiology}{The effects of simulated altitude on maximal and submaximal exercise}
+\entry{2021}{Hilkka Kontro}{Faculty of Kinesiology}{Exercise Health and Human Performance}
+\entry{2021}{Jenny Zhang}{Faculty of Kinesiology}{Neuromscular fatigue, cardiorespiratory, and perceptual responses are dependent on the amount of active muscle mass during exhaustive ramp incremental cycling}
+\entry{2022}{Kate Sales}{Faculty of Kinesiology}{Nutrition, Metabolism and Genetics}
+\entry{2020}{Nate Morries}{Faculty of Kinesiology}{Biomechanical and Morphological Deficits Following Anterior Cruciate Ligament Reconstruction with Hamstring Autographs: Implications for Rehabilitation and Return to Sport Testing}
+\entry{2020}{Thomas Tripp}{Faculty of Kinesiology}{Exercise Health and Human Performance}
+%%%%%%%%%%%%%%%%%%%%
+\section{Interviews, News Articles, \& Podcasts}
+
+\entry{2022}{UToday News Article: Course revamp is a hit with kinesiology students\\ when they create their own fitness tests}{UToday}{https://news.ucalgary.ca/news/course-revamp-hit-kinesiology-students-when-they-create-their-own-fitness-tests}
+
+\entry{2022}{Council on Undergraduate Research: Course revamp is a hit with kinesiology students\\ when they create their own fitness tests}{CUR.org}{https://www.cur.org/course-revamp-is-a-hit-with-kinesiology-students-when-they-create-their-own-fitness-tests/}
+
+
+\entry{2022}{KQ Education Group: Course revamp is a hit with kinesiology students\\ when they create their own fitness tests}{KQeducationgroup}{https://kqeducationgroup.com/course-revamp-is-a-hit-with-kinesiology-students-when-they-create-their-own-fitness-tests-news/}
+
+\entry{2021}{Spotify Podcast COVID Coffee Chats @ Ucalgary\\Episode 8: Creating a flipped Classroom with John Holash}{Spotify Podcast} {https://open.spotify.com/episode/1yF8Ff4Zn62JHdBuZ1LB6q?si=0ead0ddf70f24661}
+\entry{2021}{Calgary Journal by Lee Reed: Connection betweeen Mental Health\\ and Exercise. Interview with Dr. John Holash}{Calgary Journal}{}
+
+\entry{2021}{UToday News Article: HealthyU team creates accessible, cost-friendly workouts\\ catered to students' busy lives }{UToday}{https://www.ucalgary.ca/news/healthyu-team-creates-accessible-cost-friendly-workouts-catered-students-busy-lives}
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+\begin{refsection}
+     \nocite{*}
+     %%%%%%%%%%%%%%%%%%%
+     \printbibliography[type=article, title={{\color{pblue}Pub}lished Journal Articles}, notkeyword={submitted}, heading= subbibliography]
+ %    \printbibliography[type=article, title={{\color{pblue}Sub}mitted Journal Articles in Review}, keyword={submitted}, heading= subbibliography]
+%%%%%%%%%%%%%%%%%%%%
+     \printbibliography[type=book, title ={{\color{pblue}Boo}ks / Book Chapters}, heading= subbibliography]
+     
+\end{refsection}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{refsection}
+  \nocite{*}
+  %\newrefcontext[sorting=ynt]
+  \printbibliography[type=inproceedings, title={{\color{pblue}Con}ference Presentations / Published Abstracts}, keyword={presentation},  heading=subbibliography]
+ \end{refsection}
+ %%%%%%%%%%%%%%%%%%%%
+ \printbibsection{thesis}{{\color{pblue}The}ses}
+%%%%%%%%%%%%%%%%%
+
+\section{Conference presentation-Students}
+\textbf{32nd International Association for Dance Medicine and Science Conference.} \emph{{“Validity of the High Intensity Dance Performance Fitness Test in Undergraduate Contemporary Dancers”.}\\
+{Presenter: Allysan Lui}\\
+{Supervisor: Mr. Jesse Oswald \& Dr. John Holash}}\\
+\\
+\textbf{16th Annual Biomedical Engineering Undergraduate Summer Research Symposium } \empth{{Active Force of Skinned Muscle Fibers in Children with Cerebral Palsy}\\
+{Presenter: Gavin Thomas}\\
+{Supervisor: Dr. Venus Joumaa \& Dr. John Holash}}\\
+\\
+\textbf{McCaig Institute Summer Student Symposium 2022 }\emph{{Gavin Thomas - Investigating active force in skeletal muscle fibres from children with cerebral palsy}\\
+{Presenter: Gavin Thomas}\\
+{Supervisor: Dr. Venus Joumaa \& Dr. John Holash}}\\
+\\
+\textbf{15th Annual Biomedical Engineering Undergraduate Summer Research Symposium:}\emph{ Investigating titin isoforms and content in the skeletal muscle of obese rats \\
+Presenter: Maleeka Malik \\
+Supervisor: Dr. Venus Joumaa \& Dr. John Holash}\\
+\\
+\textbf{22nd Alberta Biomedical Engineering Conference, Banff AB, Oct 22-23, 2021. Poster presentation}
+\emph{Effects of diet-induced obesity on titin isoforms and content in skeletal muscles of rats. \\
+Malik M, Joumaa V, Rios J, Holash J, Herzog W.}
+
+
+\textbf{CSEP 2021 Zooming int the future: Exercise science in the virtual age:}\emph{{ Investigating physical activity intensity of virtual reality exergame in recreationally active young adults. Oral Presentation.}{ Ashley Lorenz }\\
+Supervisor Dr. John Holash}\\
+\\
+
+\section{Student Awards}
+\textbf{2021 BME /Faculty of Science Summer Student Best Presentation Award:}\emph{ For Maleeka Malik: Titan isoform changes in an obesity feeding rat model.}
+
+
+
+%%%%%%%%%%%%
+\section{Awards and Grants:\\}
+\emph{\textbf{2022 PURE Studentship Grant: For Gavin Thomas}: Project:Investigating active force in skeletal muscle fibres from children with cerebral palsy.\\}
+{\textbf{Grant Value \$7000 }}{University of Calgary, Calgary AB.\\}
+\\
+\emph{\textbf{2022 Faculty of Kinesiology Undergraduate Research Scholarship: For Thomas Manktelow}{ Project: Objective Analysis of Double-Pole Timing in X-Country Skiing.\\}{\textbf{Grant Value \$7000} Faculty of Kinesiology\\}}
+\\
+\emph{\textbf{2021 CURE Curriculum Based Undergraduate Research Experience}{Project: Redevelopment of Lab component of Kinesiology 375 so that final lab experiment is student enquiry driven.\\}{\textbf{Grant Value \$10,000}}}\\
+\\
+\emph{\textbf{2021 BME /Faculty of Science Summer Student Best Presentation Award: For Maleeka Malik}: Titan isoform changes in an obesity feeding rat model.\\}
+\\
+\emph{\textbf{2019 Faculty of Kinesiology Startup Funds}: For John Holash\\}
+\textbf{{Grant Value \$40000}}{ University of Calgary, Calgary AB.\\}
+\\
+\emph{\textbf{2013 Young Investigator Award:} Best Presentation for: The importance of structure on: calcium release, diffusion, and binding in a spatially realistic 3-D Sarcomere Model. }
+{\textbf{Bio-medical Basis for Human Performance Across the Lifespan}.\\}
+{University of Calgary, Calgary AB.\\}
+\\
+\emph{\textbf{2013 Outstanding Leadership (Staff) Award.} Roger Jackson Centre for Health and Wellness.\\}
+{University of Calgary, Calgary AB.\\}
+\\
+\emph{\textbf{2012 Research Travel Grant} Faculty of Graduate Studies.\\} {University of Calgary, Calgary AB.\\}
+\\
+\emph{\textbf{2011 Excellence in Research Grant} Faculty of Graduate Studies.\\}
+{University of Calgary, Calgary AB.\\}
+\\
+\emph{\textbf{1998 Alberta Sports Research Grant} Development of electronic bike ergometer.\\}
+{Government of Alberta.\\}
+\\
+\emph{\textbf{1996 Alberta Parks and Recreation Grant} Measuring muscle tone in children with Downs Syndrome.\\}
+{University of Calgary, Calgary AB.\\}
+\\
+\emph{\textbf{1996 You make a difference Award} Blind bowling program.\\}
+{Canadian National Institute for the Blind, Calgary AB.\\}
+\\
+\emph{\textbf{1994- Clean World Award}, International Association for Environmental Urban Living (GBH): for accomplishments running the Calgary River Clean-up 1994.\\}
+\\
+\emph{\textbf{1993- Mayors Environmental Stewardship Award}, Presented by Mayor Al Duer, for organizing and running the Calgary River Clean-up 1993.\\}
+{Mayoral Office, Calgary AB.\\}
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Scientific and Professional Memberships}
+\entry{1997-Current}{Canadian Society for Exercise Physiology }{CSEP}{}
+\entry{2010-Current}{European Muscle Physiology Society }{EMC}{}
+\entry{2010-Current}{Canadian High Performance Computing Society}{HPC}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Training \& Learning}
+    \entry{2022}{TI 0746-002 Developing Your Teaching Dossier for Tenure and/or Promotion}{Taylor Institute}{}
+    \entry{2022}{TI 0913-003 Creating a Flipped Lesson}{Taylor Institute}{}
+    \entry{2022}{TI 0765-004 Intentional D2L Course Shell Design}{Taylor Institute}{}
+    \entry{2022}{TI 0795-003 Online Student Assessment}{Taylor Institute}{}
+    \entry{2022}{TI 0783-001 Undergraduate Research and Experiential Learning:\\ Focusing Strategies for Courses \& Programs}{Taylor Institute}{}
+    \entry{2022}{Academic Integrity in Online courses: Adapting during COVID (March 25)}{Taylor Institute}{}
+    \entry{2022}{2020 – Putting your course online (March 23)}{Taylor Institute}{}
+   \entry{2021}{Learning to teach online }{Linda Learning}{}
+    \entry{2021}{Data science essentials with R}{Linda Learning}{}
+    \entry{2021}{Creating fun and Engaging Video Training: The Why }{Linda Learning}{}
+    \entry{2022}{Learning Git and GitHub}{Linda Learning}{}
+    \entry{2022}{Web Scraping in Python}{Linda Learning}{}
+    \entry{2022}{Using Python with Excel}{Linda Learning}{}
+    \entry{2022}{Excel Advanced formulas and Functions}{Linda Learning}{}
+    \entry{2020}{Increasing engagement with eLearning programs}{Linda Learning} {}
+    \entry{2020}{eLearning essentials: Visual design}{Linda Learning} {}
+    \entry{2020}{eLearning essentials: Instructional design}{Linda Learning} {}
+    \entry{2020}{Developing and delivering online courses}{Taylor Institute}{}
+    \entry{2019}{Teaching Days}{Taylor Institute}{}
+    \entry{2019}{Data Science with Python}{Linda Learning}{}
+    \entry{2018}{Spill Response Training}{Online, UofC}{}
+    \entry{2018}{Bio-Safety Training}{Online, UofC}{}
+    \entry{2017}{Chematix / Lab Manager}{Chematix, UofC}{}
+    \entry{2007}{Animal Care and Handling}{Online, UofC}{}
+    \entry{2018}{Occupational Health and Safety Orientation}{Online, UofC}{}
+    \entry{2018}{Workplace Inspections Training}{Online, UofC}{}
+    \entry{2016}{WHMIS 2015}{Online, UofC}{}
+    \entry{2016}{Bio-Safety Program Training}{Online, UofC}{}
+    \entry{2016}{Hazard Assessment Training}{Online, UofC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+\begin{entrylist}
+  \entry
+  {2019-Current}
+  {Instructor: Exercise Physiology, Data Science, Computational Biology}
+  {Kinesiology, UofC}
+  {Teaching and Supervising Students in : Exercise Physiology, Data Science, Computational Biology. Developing and teaching the most current technique's for monitoring, recording, and understanding data relating to the physical health, wellness, and performance of peoples through out the lifespan.}
+  \entry
+    {2013 - 2018}
+    {Data Science/Systems Analyst}
+    {HPL, Kinesiology, UofC}
+    {Design, develop and maintain expert computational solutions for research problems within the Human Performance Lab (HPL). Maintain computers, and research equipment used within the HPL.  Design and development of custom software, algorithms, and  for research equipment and special projects. Guest Lecturer for KNES: 201, 203, 615, 381, 485/685 courses}
+    ~
+    ~
+  \entry
+    { 2000 - 2013}
+    {Senior Systems Analyst}
+    {Kinesiology, UofC}
+    {Technical lead, software designer, and analyst for Kinesiology IT.  Led the development and implementation of numerous software projects, network designs, and multi-factor computer projects within Kinesiology co-supervising up-to 5 employees. Led the development of 3 versions of the Kinesiology websites. Led the development and roll out of the first interactive websites for the Olympic Oval, and Active Living (formerly Campus Recreation).}
+    \entry
+    {1984 - 2010}
+    {IT Security and Networking Consultant}
+    {RJHolash Consulting}
+    {Operated a private consulting firm which provided: computer technical support, security development, security testing, software development, application development, and general trouble/problem solving related to hardware, software, and operating systems. Clients included: Calgary Separate School Board, Calgary Regional Health Authority, Canadian National Institute for the Blind, and several private companies in Research Park. Employed up to 3 additional staff for various projects.}
+    \entry
+    {1997 - 2000}
+    {Systems Analyst}
+    {Kinesiology, UofC}
+    {Created the first Active Directory on the University of Calgary campus to solve ongoing computer issues within the Faculty of Kinesiology.  Worked to merge Faculty of Kinesiology IT, Campus Recreation IT groups and developed a process to provide IT services to Canadian Sport Centre, Olympic Oval, and Athletic department, in order to provide unified and consistent IT services. Directly managed 2 employees.\\}
+     \entry
+    {1996 - 1997}
+    {Instructor / Research Assistant {GAT}}
+    {Kinesiology, UofC}
+    {Lab supervisor \& learning tutorials: Human Growth and Development: labs \& occasional lectures. Tests and Measures \& Exercise Physiology: labs and lectures for Environmental Physiology, and Adapted Physical Education; Developed/taught biomechanics modules for the Outdoor Pursuits rock-climbing course. \\}
+     \entry
+    {1996 - 1996}
+    {Mini University Course Instructor}
+    {Campus Recreation, UofC, Calgary}
+    {Mini PhD program in Medicine, Camps for Kids. Developed course program and led activities.\\}
+    \entry
+    {1991 - 1994}
+    {Teaching \& Lab Assistant / Instructors Assistant}
+    {Kinesiology, UofC}
+    {Lab supervisor / Tutorials led for: Human Anatomy, Human Growth and Development, Statistics, Test and Measures, Computer Usages in Sport, and numerous activities and outdoor pursuit courses. Coordinated research studies and programs in biomechanics for Dr. Jack Engsburg. Testing and coordinating subjects and performing initial analysis and statistical analysis of data.\\}
+    \entry
+    {1994 - 1996}
+    {Civilian Instructor Department of National Defence }
+    {DND CFB Medley, AB}
+    {Developed \& Taught Survival Instructors, and Air Crew Survival courses and curriculum for the Department of National Defence. Programs included: orienteering, back country survival, camp skills, water craft safety, canoe tripping, leadership.\\ }
+     \entry
+    {1993 - 1996}
+    {Ski Instructor/Coach/Guide}
+    {Canada Olympic Park, Calgary}
+    {Ski Instructor for children's day camps, school programs and private lessons. Taught Alpine, Nordic, and Telemark skiing techniques.  Coached junior development programs for Alpine skiing.\\}
+     \entry
+    {1992 - 1994}
+    {Canoe Instructor/Coach/Guide}
+    {Calgary Canoe Club, Calgary}
+    {Instructed Canoe and kayaking skills and techniques for all manner of groups and school programs, day camps. Organized and led river, backcountry, and white water trips. Coached novice canoe and kayak programs.\\}
+
+\end{entrylist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Certifications}
+\begin{entrylist}
+  \entry{2013}
+    {ADI Instruments System Management and Teaching basics}
+    {University of Saskatoon}
+    {\emph{ADI System Management and Physiology Instruction modules}}
+  \entry
+    {2008  }
+    {ITIL Intermediate Level V3 certification}
+    {University of Calgary}
+    {\emph{Standards for Computer Support}}
+ \entry
+   {2005}
+   {Management Training}
+   {Franklin Covey Leadership}
+   {\emph{Franklin Covey Leadership}  }
+ \entry
+   {2004}
+   {Microsoft Certified System Architect}
+   {Continuing Education, UofC}
+   {\emph{MCSA}  }
+ \entry
+   {2001}
+   {Microsoft Certified Database Professional}
+   {Continuing Education, UofC}
+   {\emph{MCDP}  }
+ \entry
+   {1998}
+   {Microsoft Certified Professional}
+   {Continuing Education, UofC}
+   {\emph{MCP}  }
+ \entry
+   {1994}
+   {Canadian Association of Alpine Ski Instructors}
+   {Canada Olympic Park, WinSport}
+   {\emph{CSIA Level I}  }
+  \entry
+   {1994}
+   {Canadian Association of Nordic Ski Instructors}
+   {Canada Olympic Park, WinSport}
+   {\emph{CASI Level I}  }
+  \entry
+   {1992}
+   {Canadian Recreational Canoe Association}
+   {Calgary Canoe Club}
+   {\emph{CRCA Level V}  }
+   
+\end{entrylist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+\section{Conference Organization}
+    \begin{entrylist}
+     \entry{2018-2019} {Invited Reviewer - International Society of Biomechanics}{Calgary, Alberta}{ISB}
+     \entry{2006-2007}{Technology Coordinator, CSEP Conference Banff}{ Banff, AB}{CSEP}
+    \entry{1999-2000}{Technology Coordinator,CSEP Conference Canmore}{Canmore, AB}{CSEP}
+    \entry{2002} {Presentation Assistant - World Congress of Biomechanics}{Calgary, Alberta}{WCB}
+    \entry{1999} {Presentation Assistant - International Society of Biomechanics}{Calgary, Alberta}{ISB}
+    \entry{1995-1996}{Technology Director Special Olympics Canada Winter Games Conference}{Calgary, AB}{Special Olympics Calgary}
+    \end{entrylist}
+\section{Governing Boards-Volunteer}
+  \begin{entrylist}
+    \entry{2019}{Team Captain, speaker ready room}{Calgary, AB}{ISB/ASB, Calgary, AB}
+    \entry{2019}{Course Maintenance}{Canmore, AB}{International Biathlon Union, World Cup at Canmore}
+    \entry{2003-2016}{Board Member, Canadian Internet Registration Authority}{Calgary, AB}{CIRA}
+    \entry{1995-1996}{Technology Director, Special Olympics Canada Winter Games}{Calgary, AB}{Special Olympics Calgary}
+    \entry{1996}{Program Coordinator, Special Olympics swimming }{Calgary, AB}{Special Olympics}
+    \entry{1995-1996}{Program Facilitator, PREP program}{Calgary, AB}{Preparation for Re-entry into Education Program, Grace Hospital}
+  %  \entry{1993-1996}{Environmental Director}{Calgary,AB}{Calgary Canoe Club}
+ %   \entry{1994-1996}{Environmental Director}{Calgary,AB}{Calgary Area Outdoor Council}
+    \entry{1993-1996}{Outdoor activity and environment advisor}{Calgary,AB}{Mayor's Environmental Committee, City of Calgary}
+    \entry{1992-1995}{Emergency Room Support and care}{Calgary,AB}{Calgary General and Rocky View Hospitals}
+  \end{entrylist}
+\begin{flushleft}
+%\emph{September 14th, 2018}
+\today
+\end{flushleft}
+\begin{flushright}
+\emph{John Holash}
+\end{flushright}\end{document}
